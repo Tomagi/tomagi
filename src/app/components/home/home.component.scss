@@ -1,0 +1,39 @@
+@import './../../../styles/variables';
+
+.colors-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+
+  >div {
+    flex: 1;
+  }
+
+  :nth-child(1) {
+    background-color: $scheme-color1;
+  }
+
+  :nth-child(2) {
+    background-color: $scheme-color2;
+  }
+
+  :nth-child(3) {
+    background-color: $scheme-color3;
+  }
+
+  :nth-child(4) {
+    background-color: $scheme-color4;
+  }
+
+  :nth-child(5) {
+    background-color: $scheme-color5;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .colors-container {
+    flex-direction: column;
+  }
+}
